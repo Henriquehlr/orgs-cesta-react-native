@@ -17,7 +17,6 @@ export function Cesta() {
           <Image source={logo} style={estilos.imagemFazenda} />
           <Text style={estilos.nomeFazenda}>Henrry Farm</Text>
         </View>
-        <Text style={estilos.nomeFazenda}>Henrry Farm</Text>
         <Text style={estilos.descricao}>
           Uma cesta com produtos selecionados cuidadosamente da fazenda direto
           para sua cozinha
@@ -32,6 +31,7 @@ const estilos = StyleSheet.create({
   topo: {
     width: "100%",
     height: (578 / 768) * width,
+    fontFamily: "Montserrat"
   },
   titulo: {
     width: "100%",
@@ -51,7 +51,7 @@ const estilos = StyleSheet.create({
     color: "#464646",
     fontSize: 26,
     lineHeight: 42,
-    fontWeight: "bold",
+    fontFamily: "MontserratBold",
   },
   fazenda: {
     flexDirection: 'row',
@@ -65,6 +65,7 @@ const estilos = StyleSheet.create({
     fontSize: 16,
     lineHeight: 26,
     marginLeft: 12,
+    fontFamily: "MontserratRegular",
   },
   descricao: {
     color: "#A3A3A3",
