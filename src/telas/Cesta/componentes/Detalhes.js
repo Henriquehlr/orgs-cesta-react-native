@@ -20,7 +20,7 @@ export default function Detalhes({
       <Texto style={estilos.descricao}>{descricao}</Texto>
       <Texto style={estilos.preco}>{preco}</Texto>
 
-      <TouchableOpacity style={estilos.botao}>
+      <TouchableOpacity style={estilos.botao} onPress={() => {}}>
         <Texto style={estilos.textoBotao}>{botao}</Texto>
       </TouchableOpacity>
     </>
@@ -66,10 +66,10 @@ const estilos = StyleSheet.create({
     borderRadius: 6,
   },
   textoBotao: {
-    textAlign: 'center',
+    textAlign: "center",
     color: "#ffffff",
     fontSize: 16,
     lineHeight: 26,
-    fontWeight: "bold"
+    fontWeight: "bold",
   },
 });
