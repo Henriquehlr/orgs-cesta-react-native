@@ -1,5 +1,7 @@
 import React from "react";
-import { Image, StyleSheet, Dimensions, Text, View } from "react-native";
+import { Image, StyleSheet, Dimensions, View } from "react-native";
+
+import Texto from "../components/texto";
 
 import topo from "../../assets/topo.png";
 import logo from "../../assets/logo.png";
@@ -10,18 +12,18 @@ export function Cesta() {
   return (
     <>
       <Image source={topo} style={estilos.topo} />
-      <Text style={estilos.titulo}>Detalhe da cesta</Text>
+      <Texto style={estilos.titulo}>Detalhe da cesta</Texto>
       <View style={estilos.cesta}>
-        <Text style={estilos.nome}>Cesta de verduras</Text>
+        <Texto style={estilos.nome}>Cesta de verduras</Texto>
         <View style={estilos.fazenda}>
           <Image source={logo} style={estilos.imagemFazenda} />
-          <Text style={estilos.nomeFazenda}>Henrry Farm</Text>
+          <Texto style={estilos.nomeFazenda}>Henrry Farm</Texto>
         </View>
-        <Text style={estilos.descricao}>
+        <Texto style={estilos.descricao}>
           Uma cesta com produtos selecionados cuidadosamente da fazenda direto
           para sua cozinha
-        </Text>
-        <Text style={estilos.preco}>R$ 40,00</Text>
+        </Texto>
+        <Texto style={estilos.preco}>R$ 40,00</Texto>
       </View>
     </>
   );
@@ -31,7 +33,7 @@ const estilos = StyleSheet.create({
   topo: {
     width: "100%",
     height: (578 / 768) * width,
-    fontFamily: "Montserrat"
+    fontFamily: "Montserrat",
   },
   titulo: {
     width: "100%",
@@ -51,10 +53,10 @@ const estilos = StyleSheet.create({
     color: "#464646",
     fontSize: 26,
     lineHeight: 42,
-    fontFamily: "MontserratBold",
+    fontWeight: "bold"
   },
   fazenda: {
-    flexDirection: 'row',
+    flexDirection: "row",
     paddingVertical: 12,
   },
   imagemFazenda: {
@@ -65,7 +67,6 @@ const estilos = StyleSheet.create({
     fontSize: 16,
     lineHeight: 26,
     marginLeft: 12,
-    fontFamily: "MontserratRegular",
   },
   descricao: {
     color: "#A3A3A3",
